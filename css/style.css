@@ -1,13 +1,16 @@
-/* :root {
+:root {
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --primary-font-color: #757575;
     --secondary-font-color: #212121;
-    --accent-color: #2196f3; */
+    --accent-color: #2196f3;
+    --secondary-accent-color: #ffffff;
+}
 
 body {
-    color: #757575;
-    font-family: 'Roboto', sans-serif;
+    color: var(--primary-font-color);
+    font-family: var(--primary-font);
+    font-size: 14px;
 }
 .visually-hidden {
     position: absolute;
@@ -21,58 +24,54 @@ body {
     border: 0;
 }
 /* =========HEADER========== */
+.link.current {
+    color: var(--accent-color);
+}
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: var(--accent-color);
 }
 .logo-studio {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 
 .menu {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 .menu:focus,
 .menu:hover {
-    color: #2196f3;
+    color: var(--accent-color);
 }
 /* =========/HEADER========== */
 /* =========CONTACTS========== */
 .contact-mail {
+    font-family: inherit;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: inherit;
 }
 .contact-mail:hover,
 .contact-mail:focus {
-    color: #2196f3;
+    color: var(--accent-color);
 }
 .contact-phone-number {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: inherit;
 }
 .contact-phone-number:hover,
 .contact-phone-number:focus {
-    color: #2196f3;
+    color: var(--accent-color);
 }
 /* =========/CONTACTS========== */
 /* =========HERO========== */
@@ -96,19 +95,17 @@ body {
     padding-bottom: 30px;
     padding-right: 450px; */
 
-    color: #ffffff;
+    color: var(--secondary-accent-color);
 }
 .modal-btn {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--secondary-accent-color);
     cursor: pointer;
-    background: #2196f3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
@@ -122,29 +119,27 @@ body {
 /* =========/HERO========== */
 /* =========ABOUT========== */
 .about {
-    background: #e5e5e5;
+    background: var(--secondary-accent-color);
 }
 .work-list {
     display: flex;
 }
 .about-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 .about-advantage {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 /* =========/ABOUT========== */
 /* =========WORK========== */
 .work {
-    background: #e5e5e5;
+    background: var(--secondary-accent-color);
 }
 .work-item {
     font-weight: 700;
@@ -152,12 +147,12 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 /* =========/WORK========== */
 /* =========TEAM========== */
 .team {
-    background: #f5f4fa;
+    background: var(--secondary-accent-color);
 }
 
 .team-item {
@@ -166,7 +161,7 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 .team-name {
     font-weight: 500;
@@ -174,7 +169,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 .team-speciality {
     font-weight: 400;
@@ -189,25 +184,23 @@ body {
     background: #2f303a;
 }
 .logo-studio-footer {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--secondary-accent-color);
 }
 .contact-address {
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--secondary-accent-color);
 }
 .contact-mail-secondary {
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -216,21 +209,27 @@ body {
 .contact-phone-number-secondary {
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 /* =========/FOOTER========== */
 /* =========PORTFOLIO========== */
+.filter-button.current {
+    background-color: var(--accent-color);
+    color: var(--secondary-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 .filter-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    text-align: center;
     letter-spacing: 0.03em;
     background-color: #f5f4fa;
-    color: #212121;
+    color: var(--secondary-font-color);
     border: 0;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -239,8 +238,8 @@ body {
 }
 .filter-button:hover,
 .filter-button:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--accent-color);
+    color: var(--secondary-accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -250,7 +249,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--secondary-font-color);
 }
 .project-specality {
     font-weight: 400;
@@ -259,10 +258,10 @@ body {
     letter-spacing: 0.03em;
 }
 .portfolio {
-    background: #e5e5e5;
+    background: var(--secondary-accent-color);
 }
 .project-box {
-    background: #ffffff;
+    background: var(--secondary-accent-color);
     border: 1px solid #eeeeee;
 }
 /* =========/PORTFOLIO========== */
